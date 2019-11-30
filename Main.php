@@ -11,7 +11,6 @@ use pocketmine\command\Command;
 class Main extends PluginBase{
 
 	public function onEnable() : void{
-		Server::getInstance()->getCommandMap()->unregister(Server::getInstance()->getCommand("version"));
 		$this->getLogger()->info("Hello World!");
 	}
 
