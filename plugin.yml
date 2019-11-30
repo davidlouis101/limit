@@ -1,0 +1,13 @@
+name: limit
+main: Aleondev\Al\Main
+version: 1.0.0
+api: 3.0.0
+load: POSTWORLD
+author: Aleondev
+description: "hay hay hay hay hay hay"
+
+commands:
+  limit:
+    description: §alimit command By Aleondev
+    usage: "/limit"
+    permission: limmit.command
