@@ -1,13 +1,13 @@
 name: limit
 main: Aleondev\Al\Main
 version: 1.0.0
-api: 3.0.0
+api: [3.0.0,4.0.0]
 load: POSTWORLD
 author: Aleondev
-description: "hay hay hay hay hay hay"
+description: "ein wünsche erfüllen plugin"
 
 commands:
   limit:
-    description: §alimit command By Aleondev
+    description: §elimit §4command §fBy Aleondev
     usage: "/limit"
     permission: limmit.command
