@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Aleondev\Al;
+namespace Aleondev;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\command\CommandSender;
@@ -16,15 +16,11 @@ class Main extends PluginBase{
 
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
 		switch($command->getName()){
-			case "limit":
-                $sender->sendMessage("§7[§4Limit§7] §cGeneriert..");
-                $sender->sendMessage("§7[§eLimit§7] §cGeneriert...");
-                $sender->sendMessage("§7[§4Limit§7] §cGeneriert....");
-                $sender->sendMessage("§7[§eLimit§7] §cGeneriert.....");
-                $sender->sendMessage("§7[§4Limit§7] §cGeneriert......");
-                $sender->sendMessage("§7[§eLimit§7] §cGeneriert.......");
-                $sender->sendMessage("§7[§4Limit§7]§cDas Limit liegt bei");
-                $sender->sendMessage("§7[§eLimit§7] §e" .rand(1, 100000). "§e $");
+			case "moneydrop":
+				$zahl = $args[0];
+				foreach ($this->getServer()->getOnlinePlayers() as $player) {
+					$this->getServer()->getPluginManager()->getPlugin("EconomyAPI")->addMoney($player, $zahl);
+					$player->sendMessage("§4Du hast §e" .$zahl. "$ §4erhalten durch einen Moneydrop");
 
 				return true;
 			default:
