@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Aleondev;
+namespace Aleondev\Al;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\command\CommandSender;
