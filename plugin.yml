@@ -4,10 +4,10 @@ version: 1.0.0
 api: [3.0.0,4.0.0]
 load: POSTWORLD
 author: Aleondev
-description: "ein wünsche erfüllen plugin"
+description: "mein dc pl"
 
 commands:
-  limit:
-    description: §elimit §4command §fBy Aleondev
-    usage: "/limit"
-    permission: limmit.command
+  DC:
+    description: §4Erstellt Ein DC Link fur Alle!
+    usage: "/DC"
+    permission: DC.command
