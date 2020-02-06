@@ -11,20 +11,21 @@ use pocketmine\command\Command;
 class Main extends PluginBase{
 
 	public function onEnable() {
-		$this->getLogger()->info("Hello World!");
+		$this->getLogger()->info("Aktiviert!");
 	}
 
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
 		switch($command->getName()){
-			case "limit":
-                $sender->sendMessage("§7[§4Limit§7] §cGeneriert..");
-                $sender->sendMessage("§7[§4Limit§7] §cGeneriert...");
-                $sender->sendMessage("§7[§4Limit§7] §cGeneriert....");
-                $sender->sendMessage("§7[§4Limit§7] §cGeneriert.....");
-                $sender->sendMessage("§7[§4Limit§7] §cGeneriert......");
-                $sender->sendMessage("§7[§4Limit§7] §cGeneriert.......");
-                $sender->sendMessage("§7[§4Limit§7]§cDas Limit liegt bei");
-                $sender->sendMessage("§7[§4Limit§7] §e" .rand(1, 100000). "§e $");
+			case "DC":
+                $sender->sendMessage("§7Dc §cGeneriert.......");
+                $sender->sendMessage("§7Dc §cGeneriert.......");
+                $sender->sendMessage("§7Dc §cGeneriert.......");
+                $sender->sendMessage("§7Dc §cGeneriert.......");
+                $sender->sendMessage("§7Dc §cGeneriert.......");
+                $sender->sendMessage("§7Dc §cGeneriert.......");
+                $sender->sendMessage("§7Dc §cGeneriert.......");
+                $sender->sendMessage("§7Dc §cGeneriert.......");
+                $this->getServer()->broadcastMessage("Discord : https://discord.gg/rrf3gqh");
 
 				return true;
 			default:
@@ -33,6 +34,6 @@ class Main extends PluginBase{
 	}
 
 	public function onDisable() {
-		$this->getLogger()->info("Bye");
+		$this->getLogger()->info("Aus");
 	}
 }
