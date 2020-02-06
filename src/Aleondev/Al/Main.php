@@ -16,15 +16,15 @@ class Main extends PluginBase{
 
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
 		switch($command->getName()){
-			case "limit":
+			case "DC":
                 $sender->sendMessage("§7[§4Limit§7] §cGeneriert..");
                 $sender->sendMessage("§7[§4Limit§7] §cGeneriert...");
                 $sender->sendMessage("§7[§4Limit§7] §cGeneriert....");
                 $sender->sendMessage("§7[§4Limit§7] §cGeneriert.....");
                 $sender->sendMessage("§7[§4Limit§7] §cGeneriert......");
                 $sender->sendMessage("§7[§4Limit§7] §cGeneriert.......");
-                $sender->sendMessage("§7[§4Limit§7]§cDas Limit liegt bei");
-                $sender->sendMessage("§7[§4Limit§7] §e" .rand(1, 100000). "§e $");
+                $sender->sendMessage("Link");
+
 
 				return true;
 			default:
