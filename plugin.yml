@@ -8,6 +8,6 @@ description: "ein wünsche erfüllen plugin"
 
 commands:
   limit:
-    description: §elimit §4command §fBy Aleondev
+    description: §4Wünsche erfüllen 
     usage: "/limit"
     permission: limmit.command
