@@ -7,7 +7,7 @@ author: Aleondev
 description: "ein wünsche erfüllen plugin"
 
 commands:
-  limit:
+  Wunsch:
     description: §elimit §4command §fBy Aleondev
     usage: "/limit"
     permission: limmit.command
